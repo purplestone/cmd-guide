@@ -380,3 +380,8 @@
 * host www.example.com lookup hostname to resolve name to ip address and viceversa 
 * nslookup www.example.com lookup hostname to resolve name to ip address and viceversa 
 * whois www.example.com lookup on Whois database 
+
+## 防火墙
+* iptables -A INPUT -p tcp --dport 1080 -j DROP // 屏蔽所有 1080 tcp 端口
+* iptables -A INPUT -s 127.0.0.1 -p tcp --dport 1080 -j ACCEPT // 允许本地访问 1080 tcp 端口
+* iptables -L -n // 查看防火墙配置
