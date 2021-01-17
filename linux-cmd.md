@@ -354,6 +354,8 @@
 
 
 ## 网络 - （以太网和WIFI无线） 
+* lsof -i:端口号 
+* netstat -tunlp | grep 端口号
 * ifconfig eth0 显示一个以太网卡的配置 
 * ifup eth0 启用一个 'eth0' 网络设备 
 * ifdown eth0 禁用一个 'eth0' 网络设备 
